@@ -18,7 +18,7 @@
 	</head>
 	<body id="top">
 		<!-- ヘッダーモジュール -->
-		<header class="l-header">
+		<header>
 			<div class="sp u-sp">
 				<!-- ハンバーガーメニューモジュール -->
 				<div class="p-hamburger-01 js-hamburger">
@@ -65,70 +65,111 @@
 		<!-- ヘッダーモジュール -->
 
 		<main>
-			<div class="kv">
-				<div class="fade_img01">
-					<div class="fade_item item01"></div>
-					<div class="fade_item item02"></div>
+			<!-- KVモジュール -->
+			<div class="p-kv-01">
+				<div class="js-kv__slide">
+					<picture class="p-kv__slide__item">
+						<source srcset="/assets/img/guesthouse/kv_01_sp.png" media="(max-width: 7687px)"/>
+						<img src="/assets/img/guesthouse/kv_01.png" alt="" width="1280" height="600">
+					</picture>
+					<picture class="p-kv__slide__item">
+						<source srcset="/assets/img/guesthouse/kv_02_sp.png" media="(max-width: 7687px)"/>
+						<img src="/assets/img/guesthouse/kv_02.png" alt="" width="1280" height="600">
+					</picture>
 				</div>
-				<img class="kv_logo" src="https://placehold.jp/268x268.png" alt="ロゴ" width="268" height="268">
+				<img class="p-kv__logo" src="https://placehold.jp/268x268.png" alt="ロゴ" width="268" height="268">
 			</div>
+			<!-- KVモジュール -->
 
-			<section class="about" id="about">
-				<h2 class="sec_ttl target">
+			<!-- section1 -->
+			<section class="l-section-01" id="about">
+				<h2 class="c-heading-01 target">
 					私たちについて
-					<span class="gold">ABOUT</span>
+					<span class="c-heading-01--sub">ABOUT</span>
 				</h2>
-				<div class="container">
-					<div class="image">
+				<div class="p-contents__text-img-01">
+					<div class="p-contents__img">
 						<img src="https://placehold.jp/520x535.png" alt="" width="520" height="535">
 					</div>
-					<div class="about_text">
+					<div class="p-contents__text">
 						<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
 						<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-						<a href="#reserve">ご予約はこちら</a>
+						<a href="#reserve" class="c-button">ご予約はこちら</a>
 					</div>
 				</div>
 			</section>
+			<!-- section1 -->
 
-			<section class="info" id="info">
-				<h2 class="sec_ttl">
+			<!-- section2 -->
+			<section class="l-section-01 info" id="info">
+				<h2 class="c-heading-01">
 					インフォメーション
-					<span class="gold">information</span>
+					<span class="c-heading-01--sub">information</span>
 				</h2>
-				<h3 class="room_info">お部屋情報</h3>
-				<div class="room_contents">
-					<div class="room_item">
-						<div class="room_image">
+				<!-- section2-1 -->
+				<section>
+					<h3 class="c-heading-02">お部屋情報</h3>
+					<div class="p-contents__text-img-02">
+						<div class="p-contents__img">
 							<img src="https://placehold.jp/520x535.png" alt="" width="520" height="520">
 						</div>
-						<div class="room_text">
-							<h4 class="room_name">テキストテキストテキストテキスト</h4>
-							<p class="room_ex">テキストテキストテキストテキスト</p>
-							<p class="money">xx円</p>
-							<h5>お部屋詳細 </h5>
+						<div class="p-contents__text">
+							<p class="p-contents__name">テキストテキストテキストテキスト</p>
+							<p class="p-contents__desc">テキストテキストテキストテキスト</p>
+							<p class="p-contents__price">xx円</p>
+							<h4 class="c-heading-03">お部屋詳細 </h4>
 							<dl>
-								<dt>定員</dt>
+								<dt>項目１</dt>
 								<dd>テキスト</dd>
 							</dl>
 							<dl>
-								<dt>トイレ・シャワー</dt>
+								<dt>項目２</dt>
 								<dd>テキスト</dd>
 							</dl>
 							<dl>
-								<dt>喫煙</dt>
+								<dt>項目３</dt>
 								<dd>テキスト</dd>
 							</dl>
 							<dl>
-								<dt>チェックイン・アウト</dt>
+								<dt>項目４</dt>
 								<dd>テキスト</dd>
 							</dl>
 						</div>
 					</div>
-				</div>
+					<div class="p-contents__text-img-02">
+						<div class="p-contents__img">
+							<img src="https://placehold.jp/520x535.png" alt="" width="520" height="520">
+						</div>
+						<div class="p-contents__text">
+							<p class="p-contents__name">テキストテキストテキストテキスト</p>
+							<p class="p-contents__desc">テキストテキストテキストテキスト</p>
+							<p class="p-contents__price">xx円</p>
+							<h4 class="c-heading-03">お部屋詳細 </h4>
+							<dl>
+								<dt>項目１</dt>
+								<dd>テキスト</dd>
+							</dl>
+							<dl>
+								<dt>項目２</dt>
+								<dd>テキスト</dd>
+							</dl>
+							<dl>
+								<dt>項目３</dt>
+								<dd>テキスト</dd>
+							</dl>
+							<dl>
+								<dt>項目４</dt>
+								<dd>テキスト</dd>
+							</dl>
+						</div>
+					</div>
+				</section>
+				<!-- section2-1 -->
 
-				<div class="gallery_contents">
-					<h3 class="gallery">館内ギャラリー</h3>
-					<div class="gallery_items">
+				<!-- section2-2 -->
+				<section class="l-section-02">
+					<h3 class="c-heading-02">館内ギャラリー</h3>
+					<div class="p-contents__img--3col-01">
 						<img src="https://placehold.jp/393x295.png" alt="">
 						<img src="https://placehold.jp/393x295.png" alt="">
 						<img src="https://placehold.jp/393x295.png" alt="">
@@ -136,122 +177,160 @@
 						<img src="https://placehold.jp/393x295.png" alt="">
 						<img src="https://placehold.jp/393x295.png" alt="">
 					</div>
-				</div>
+				</section>
+				<!-- section2-2 -->
 
-				<div class="activity_contents">
-					<h3 class="activity">設備</h3>
-					<div class="act_items">
-						 <p class="amenity_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-					</div>
-				</div>
+				<!-- section2-3 -->
+				<section class="l-section-02">
+					<h3 class="c-heading-02">設備</h3>
+					<p class="c-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				</section>
+				<!-- section2-3 -->
 
-				<div class="activity_contents">
-					<h3 class="activity">アクテビティ</h3>
-					<div class="act_items">
-						<div class="item">
-						<img src="https://placehold.jp/520x280.png" alt="" width="520" height="280">
-							<div class="text">
-								<h4 class="act_name">テキストテキストテキストテキスト</h4>
-								<p class="act_ex">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				<!-- section2-4 -->
+				<section class="l-section-02">
+					<h3 class="c-heading-02">アクテビティ</h3>
+					<div class="l-container--flex-01">
+						<section class="p-contents__text-img--2col-01">
+							<div class="p-contents__img">
+								<img src="https://placehold.jp/520x380.png" alt="" width="520" height="380">
 							</div>
-						</div>
+							<div class="p-contents__text">
+								<h4 class="c-heading-04">テキストテキストテキストテキスト</h4>
+								<p class="c-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							</div>
+						</section>
+						<section class="p-contents__text-img--2col-01">
+							<div class="p-contents__img">
+								<img src="https://placehold.jp/520x380.png" alt="" width="520" height="380">
+							</div>
+							<div class="p-contents__text">
+								<h4 class="c-heading-04">テキストテキストテキスト</h4>
+								<p class="c-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							</div>
+						</section>
 					</div>
-				</div>
+				</section>
+				<!-- section2-4 -->
 
-				<div class="menu_contents">
-					<h3 class="menu">お食事メニュー</h3>
-					<div class="menu_items">
-						<div class="menu_item">
+				<!-- section2-5 -->
+				<section class="l-section-02">
+					<h3 class="c-heading-02">お食事メニュー</h3>
+					<div class="l-container--flex-02">
+						<section class="p-contents__text-img--3col-01">
 							<img src="https://placehold.jp/346x231.png" alt="" width="346" height="231">
-							<h4 class="menu_name">テキストテキストテキストテキスト</h4>
-							<p class="menu_ex">テキストテキストテキストテキスト</p>
-							<p class="menu_price">xx円</p>
+							<h4 class="p-contents__name">テキストテキストテキストテキスト</h4>
+							<p class="p-contents__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							<p class="p-contents__price">xx円</p>
+						</section>
+						<section class="p-contents__text-img--3col-01">
+							<img src="https://placehold.jp/346x231.png" alt="" width="346" height="231">
+							<h4 class="p-contents__name">テキストテキストテキストテキスト</h4>
+							<p class="p-contents__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							<p class="p-contents__price">xx円</p>
+						</section>
+						<section class="p-contents__text-img--3col-01">
+							<img src="https://placehold.jp/346x231.png" alt="" width="346" height="231">
+							<h4 class="p-contents__name">テキストテキストテキストテキスト</h4>
+							<p class="p-contents__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							<p class="p-contents__price">xx円</p>
+						</section>
+					</div>
+				</section>
+				<!-- section2-5 -->
+
+				<!-- section2-6 -->
+				<section class="l-section-02">
+					<h3 class="c-heading-02">レンタルルーム</h3>
+					<div class="p-contents__text-img-03">
+						<img src="https://placehold.jp/520x390.png" alt="" width="520" height="390">
+						<div class="rental_text">
+							<p>テキストテキストテキストテキスト</p>
+							<p>テキストテキストテキストテキスト</p>
+							<p class="rental_price">xx円</p>
 						</div>
 					</div>
-				</div>
+				</section>
+				<!-- section2-6 -->
 
-				<div class="rental_contents">
-					<h4 class="rental">レンタルルーム</h4>
-					<div class="rental_items">
-						<div class="item">
-							<img src="https://placehold.jp/520x390.png" alt="" width="520" height="390">
-							<div class="rental_text">
-								<p>テキストテキストテキストテキスト</p>
-								<p>テキストテキストテキストテキスト</p>
-								<p class="rental_price">xx円</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="activity_contents">
-					<h3 class="activity">注意事項</h3>
-					<div class="act_items">
-							<p class="amenity_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-					</div>
-				</div>
+				<!-- section2-7 -->
+				<section class="l-section-02">
+					<h3 class="c-heading-02">注意事項</h3>
+					<p class="c-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				</section>
+				<!-- section2-7 -->
 			</section>
+			<!-- section2 -->
 
-			<section class="access" id="access">
-				<h2 class="sec_ttl">
+			<!-- section3 -->
+			<section class="l-section-01" id="access">
+				<h2 class="c-heading-01">
 					アクセス
-					<span class="gold">Access</span>
+					<span class="c-heading-01--sub">Access</span>
 				</h2>
-				<div class="adress">
-					<h5>住所</h5>
+				<div class="p-access-01">
+					<p>住所</p>
 					<p>〒000-0000</p>
-					<p>テキストテキストテキストテキスト</p>
-					<p>テキストテキストテキストテキスト</p>
+					<p class="c-text">東京都〇〇区0-0-0</p>
+					<p class="c-text">テキストテキストテキストテキスト</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662980.6674108843!2d138.64854334073812!3d35.50405281645833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2z5p2x5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1662370783235!5m2!1sja!2sjp"
+						class="p-access__map"
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
 				</div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662980.6674108843!2d138.64854334073812!3d35.50405281645833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2z5p2x5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1662370783235!5m2!1sja!2sjp"
-					class="map"
-					loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade">
-				</iframe>
 			</section>
+			<!-- section3 -->
 
-			<section class="reserve" id="reserve">
-				<h2 class="sec_ttl">
+			<!-- section4 -->
+			<section class="l-section-01" id="reserve">
+				<h2 class="c-heading-01">
 					ご予約
-					<span class="gold">Reservation</span>
+					<span class="c-heading-01--sub">Reservation</span>
 				</h2>
-				<p>ご予約は公式LINEから承ります。</p>
-				<p>下記ボタンより友達追加お願いいたします。</p>
-				<a href="https://lin.ee/fLDmnjI" target="_blank">友だち追加</a>
-				<p>LINEの登録ができない場合は、電話でのお問い合わせも可能です。</p>
-			</section>
-
-			<section class="contact" id="contact">
-				<h2 class="sec_ttl">
-					お問い合わせ
-					<span class="gold">Contact</span>
-				</h2>
-				<div class="tel">
-					<img src="/assets/images/tel.svg" alt="電話アイコン" width="48" height="48">
-					<a href="tel:000-0000-0000">000-0000-0000</a>
+				<div class="p-contact-01">
+					<p class="c-text u-center">ご予約は公式LINEから承ります。<br>下記ボタンより友達追加お願いいたします。</p>
+					<a class="c-button__LINE" href="https://lin.ee/fLDmnjI" target="_blank">友だち追加</a>
+					<p class="p-contact__text">LINEの登録ができない場合は、電話でのお問い合わせも可能です。</p>
 				</div>
-				<p>お問い合わせ時間</p>
-				<p>テキストテキスト</p>
 			</section>
+			<!-- section4 -->
+
+			<!-- section5 -->
+			<section class="l-section-01" id="contact">
+				<h2 class="c-heading-01">
+					お問い合わせ
+					<span class="c-heading-01--sub">Contact</span>
+				</h2>
+				<div class="p-contact-02">
+					<div class="p-contact__tel">
+						<img src="/assets/img/tel.svg" alt="電話アイコン" width="48" height="48">
+						<a href="tel:000-0000-0000">000-0000-0000</a>
+					</div>
+					<p>お問い合わせ時間</p>
+					<p>00:00~00:00</p>
+				</div>
+			</section>
+			<!-- section5 -->
 		</main>
 
-		<footer>
-			<div class="footer_contents">
-				<img src="/assets/images/logo_sp.svg" alt="ロゴ" width="50" height="50">
-				<ul class="footer_nav">
+		<footer class="p-footer-01">
+			<div class="p-footer__inner">
+				<img src="https://placehold.jp/50x50.png" alt="ロゴ" width="50" height="50">
+				<ul class="p-footer__nav">
 					<li><a href="#about">私たちについて</a></li>
 					<li><a href="#info">インフォメーション</a></li>
 					<li><a href="#access">アクセス</a></li>
 					<li><a href="#contact">お問い合わせ</a></li>
 					<li><a href="#reserve" class="reserve">ご予約</a></li>
 				</ul>
-				<div class="infomation">
+				<div class="p-footer__information">
 					<p>〒000-0000</p>
 					<p>テキストテキスト</p>
 					<p>000-000-0000</p>
 					<p>example@gmail.com</p>
 				</div>
-				<small>&copy; texttext . All RightsReserved.</small>
+				<small>&copy; texttexttexttext . All RightsReserved.</small>
 			</div>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

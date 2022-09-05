@@ -11,14 +11,14 @@ ham.addEventListener('click', () => {
 })
 
 $(function () {
-  $(".fade_img01 .fade_item:not(:first-child)").hide();
+  $(".js-kv__slide .p-kv__slide__item:not(:first-child)").hide();
   setInterval(function () {
-    $(".fade_img01 .fade_item:first-child")
+    $(".js-kv__slide .p-kv__slide__item:first-child")
       .fadeOut("slow")
-      .next(".fade_item")
+      .next(".p-kv__slide__item")
       .fadeIn("slow")
       .end()
-      .appendTo(".fade_img01");
+      .appendTo(".js-kv__slide");
   }, 5000);
 });
 
