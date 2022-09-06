@@ -1,15 +1,15 @@
 "use strict";
-
+// ハンバーガー
 const ham = document.querySelector('.js-hamburger');
 const nav =  document.querySelector('.js-slide');
 const linksInPage = document.querySelectorAll('a[href^="#"]');
 const links = document.querySelectorAll('.sp a[href^="#"]');
-
 ham.addEventListener('click', () => {
   ham.classList.toggle('is-active');
   nav.classList.toggle('is-active');
 })
 
+// スライダー
 $(function () {
   $(".js-kv__slide .p-kv__slide__item:not(:first-child)").hide();
   setInterval(function () {
@@ -22,6 +22,7 @@ $(function () {
   }, 5000);
 });
 
+// スムーズスクロール
 linksInPage.forEach(link => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
@@ -38,9 +39,11 @@ linksInPage.forEach(link => {
   })
 });
 
-links.forEach(link => {
-  link.addEventListener('click', () => {
-    ham.classList.remove('is-active');
-    nav.classList.remove('is-active');
+// ページジャンプ
+const pagetopBtn = document.querySelector('#js-page-top');
+pagetopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
   });
-})
+});
