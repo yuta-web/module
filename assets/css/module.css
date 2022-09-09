@@ -590,7 +590,8 @@ KVモジュール
   .p-contents__text-img--3col-01:not(:nth-of-type(2n)) {
     margin-right: unset;
   }
-  .p-contents__text-img--3col-01:nth-of-type(n+3) {
+  .p-contents__text-img--3col-01:nth-of-type(n+3),
+	.p-contents__text-img--3col-01:nth-of-type(n+2) {
     margin-top: unset;
   }
   .p-contents__text-img--3col-01:not(:nth-of-type(3n)),
@@ -604,16 +605,9 @@ KVモジュール
 }
 
 
-.p-contents__text-img--3col-02 dl{
-	display: flex;
-	border-bottom: 1px dashed #a58b5c;
-	justify-content: space-between;
-	padding: 5px 0;
-	margin: 5px 0 0;
-	font-size: 14px;
+.p-contents__text-img--3col-02:nth-of-type(n+2) {
+	margin-top: 40px;
 }
-
-
 .p-contents__text-img--3col-02 .p-contents__name {
   font-size: 1.6rem;
   line-height: 1.875;
@@ -623,6 +617,15 @@ KVモジュール
 .p-contents__text-img--3col-02 img {
   margin-top: 10px;
 }
+.p-contents__text-img--3col-02 dl{
+	display: flex;
+	border-bottom: 1px dashed #a58b5c;
+	justify-content: space-between;
+	padding: 5px 0;
+	margin: 5px 0 0;
+	font-size: 14px;
+}
+
 /*-- コンテンツ（テキスト＋画像 3カラム） --*/
 
 /*-- コンテンツ（画像3カラム） --*/
