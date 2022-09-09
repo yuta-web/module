@@ -879,10 +879,19 @@ buttonモジュール
 }
 
 
-@media screen and (min-width: 768px) {
-  .c-button__LINE  {
-		width: 300px;
-  }
+@media screen and (max-width: 768px) {
+	.c-button-02 {
+		width: calc((100% - 20px)/2);
+		margin-right: 20px;
+		font-size: 1.8rem;
+		padding: 20px 0;
+	}
+	.c-button-02:nth-of-type(2n) {
+		margin-right: 0;
+	}
+	.c-button-02:nth-of-type(n+3) {
+		margin-top: 20px;
+	}
 }
 .c-button__LINE {
   display: block;
