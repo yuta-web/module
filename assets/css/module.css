@@ -193,7 +193,6 @@ ol, ul {
 	.p-slide__list.is-active {
 		right: 0;
 	}
-
 	.p-slide__list li a {
 		margin-bottom: 40px;
 		display: block;
@@ -210,6 +209,10 @@ ol, ul {
 		border: solid 1px #fff;
 		border-radius: 8px;
 		text-align: center;
+	}
+
+	.p-slide__list li img {
+		object-fit: contain;
 	}
 }
 /*-- スライドメニューモジュール --*/
@@ -229,6 +232,9 @@ ol, ul {
   position: absolute;
   top: 0;
   left: 0;
+}
+.p-header__menu-01 .p-header__logo img {
+  object-fit: contain;
 }
 .p-header__menu-01 .p-header__menu__list {
   height: 50px;
@@ -315,7 +321,9 @@ KVモジュール
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+	object-fit: contain;
 }
+
 /* -------------------
 KVモジュール
 ------------------- */
@@ -598,15 +606,26 @@ KVモジュール
 	.p-contents__text-img--3col-02:not(:nth-of-type(3n)) {
     margin-right: 20px;
   }
-  .p-contents__text-img--3col-01:nth-of-type(n+4),
-	.p-contents__text-img--3col-02:nth-of-type(n+4) {
-    margin-top: 40px;
-  }
+
+	.p-contents__text-img--3col-02:nth-of-type(2) {
+		margin-top: 40px;
+	}
+	.p-contents__text-img--3col-02:nth-of-type(3) {
+		margin-top: 80px;
+	}
+	.p-contents__text-img--3col-02:nth-of-type(5) {
+		margin-top: 40px;
+	}
+	.p-contents__text-img--3col-02:nth-of-type(6) {
+		margin-top: 80px;
+	}
 }
 
-
+@media screen and (max-width: 768px) {
 .p-contents__text-img--3col-02:nth-of-type(n+2) {
 	margin-top: 40px;
+}
+
 }
 .p-contents__text-img--3col-02 .p-contents__name {
   font-size: 1.6rem;
@@ -982,6 +1001,21 @@ buttonモジュール
 ------------------- */
 
 /* -------------------
+parallaxモジュール
+------------------- */
+.c-parallax-bg {
+	background-image: url('/assets/img/bar/kv_01.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+	height: 300px;
+}
+/* -------------------
+parallaxモジュール
+------------------- */
+
+/* -------------------
 フッターモジュール
 ------------------- */
 .p-footer-01 {
@@ -1052,6 +1086,7 @@ buttonモジュール
     top: 0;
     left: 0;
     margin: 0;
+		object-fit: contain;
   }
   .p-footer-01 .p-footer__nav {
     display: flex;
