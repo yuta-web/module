@@ -39,7 +39,34 @@ linksInPage.forEach(link => {
   })
 });
 
-// ページジャンプ
+// フェードイン
+// let els = document.querySelectorAll('.js-fadein');
+// let windowHeight = window.innerHeight;
+// console.log(els);
+// els.forEach(function(fadeIn) {
+//   window.addEventListener('scroll', function() {
+//     let offset = fadeIn.getBoundingClientRect().top;
+//     let scroll = window.scrollY;
+//     if(scroll > offset - windowHeight + 1000){
+//        fadeIn.classList.add('is-active');
+//     }
+//   })
+// })
+
+let fadeInTarget = document.querySelectorAll('.js-fadein');
+window.addEventListener('scroll', () => {
+  for (let i = 0; i < fadeInTarget.length; i++){
+    const rect = fadeInTarget[i].getBoundingClientRect().top;
+    const scroll = window.pageYOffset || document.documentElement.scrollTop;
+    const offset = rect + scroll;
+    const windowHeight = window.innerHeight; // 現在のブラウザの高さ
+    if (scroll > offset - windowHeight + 150) {
+      fadeInTarget[i].classList.add('is-active');
+    }
+  }
+});
+
+//ページジャンプ
 const pagetopBtn = document.querySelector('#js-page-top');
 pagetopBtn.addEventListener('click', () => {
   window.scrollTo({

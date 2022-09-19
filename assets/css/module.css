@@ -1213,3 +1213,20 @@ utility
 /* -------------------
 utility
 ------------------- */
+
+/* -------------------
+js
+------------------- */
+.js-fadein {
+  opacity : 0;
+  transform: translateY(70px);
+	transition-duration: 1s;
+	transition-property: opacity, transform;
+}
+.js-fadein.is-active {
+	opacity: 1;
+	transform: translateY(0);
+}
+/* -------------------
+js
+------------------- */
