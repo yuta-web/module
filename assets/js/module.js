@@ -39,20 +39,6 @@ linksInPage.forEach(link => {
   })
 });
 
-// フェードイン
-// let els = document.querySelectorAll('.js-fadein');
-// let windowHeight = window.innerHeight;
-// console.log(els);
-// els.forEach(function(fadeIn) {
-//   window.addEventListener('scroll', function() {
-//     let offset = fadeIn.getBoundingClientRect().top;
-//     let scroll = window.scrollY;
-//     if(scroll > offset - windowHeight + 1000){
-//        fadeIn.classList.add('is-active');
-//     }
-//   })
-// })
-
 let fadeInTarget = document.querySelectorAll('.js-fadein');
 window.addEventListener('scroll', () => {
   for (let i = 0; i < fadeInTarget.length; i++){

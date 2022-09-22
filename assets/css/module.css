@@ -66,6 +66,7 @@ ol, ul {
 .l-section-03 {
   padding: 40px 60px 40px;
 	margin: 0 auto;
+	max-width: 1080px;
 }
 @media screen and (max-width: 768px) {
 	.l-section-03 {
@@ -111,6 +112,9 @@ ol, ul {
 .l-content--bg-black {
 	background-color: #111;
 	color: #fff;
+}
+.l-content--bg-gray {
+	background-color: rgb(210 214 215);
 }
 /*-- containerモジュール --*/
 /* -------------------
@@ -333,7 +337,6 @@ KVモジュール
 ------------------- */
 /*-- コンテンツ（テキスト＋画像） --*/
 .p-contents__text-img-01 {
-	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -495,6 +498,65 @@ KVモジュール
     margin-top: 40px;
   }
 }
+
+
+.p-contents__text-img-04 {
+	display: flex;
+	justify-content: space-between;
+	margin: 80px auto 0;
+}
+.p-contents__text-img-04 .p-contents__text-area {
+	width: 40%;
+}
+.p-contents__text-img-04 .p-contents__heading {
+	font-size: 2.4rem;
+	margin: 40px 0;
+}
+.p-contents__text-img-04 .p-contents__text {
+	font-size: 2rem;
+	line-height: 1.5;
+}
+.p-contents__text-img-04 .p-contents__text + .p-contents__text {
+	margin: 20px 0 0;
+}
+.p-contents__text-img-04 .p-contents__img-area {
+	display: flex;
+	width: 60%;
+	margin: 0 0 0 40px;
+}
+.p-contents__text-img-04 .p-contents__img {
+	width: calc((100% - 20px)/2);
+	height: 400px;
+	object-fit: cover;
+}
+.p-contents__text-img-04 .p-contents__img:nth-of-type(n+2) {
+	margin: 0 0 0 20px;
+}
+@media screen and (max-width: 768px) {
+	.p-contents__text-img-04 {
+		display: block;
+		margin: 40px auto 0;
+	}
+	.p-contents__text-img-04 .p-contents__text-area {
+		width: 100%;
+	}
+	.p-contents__text-img-04 .p-contents__heading {
+		margin: 20px 0;
+	}
+	.p-contents__text-img-04 .p-contents__img-area {
+		display: block;
+		width: 100%;
+		margin: 20px 0 0 0;
+	}
+	.p-contents__text-img-04 .p-contents__img {
+		width: 100%;
+		height: 300px;
+	}
+	.p-contents__text-img-04 .p-contents__img:nth-of-type(n+2) {
+		margin: 20px 0 0;
+	}
+}
+
 /*-- コンテンツ（テキスト＋画像） --*/
 
 /*-- コンテンツ（テキスト＋画像 2カラム） --*/
@@ -1004,7 +1066,6 @@ buttonモジュール
 parallaxモジュール
 ------------------- */
 .c-parallax-bg {
-	background-image: url('/assets/img/bar/kv_01.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -1034,7 +1095,7 @@ parallaxモジュール
 .p-footer-01 img {
 	margin: 0 auto;
   width: 80px;
-  height: 80px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 53px;
@@ -1226,6 +1287,23 @@ js
 .js-fadein.is-active {
 	opacity: 1;
 	transform: translateY(0);
+}
+.js-slidein-right {
+  opacity : 0;
+  transform: translateX(70px);
+	transition-duration: 1s;
+	transition-property: opacity, transform;
+}
+.js-slidein-right-late {
+	opacity : 0;
+  transform: translateX(120px);
+	transition-duration: 1.5s;
+	transition-property: opacity, transform;
+}
+.js-slidein-right.is-active,
+.js-slidein-right-late.is-active {
+	opacity: 1;
+	transform: translateX(0);
 }
 /* -------------------
 js
